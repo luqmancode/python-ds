@@ -24,7 +24,7 @@ def search(arr, val):
 
     while temp < val:
         low = high
-        high = 2 * high
+        high += 1
         temp = arr[high]
 
     ans = binary_search(arr, low, high, val)
